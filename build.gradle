@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.intellij' version '0.3.2'
+    id 'org.jetbrains.intellij' version '0.4.1'
 }
 
 group 'com.albertpatterson.notes-plugin'
@@ -18,10 +18,12 @@ dependencies {
 }
 
 intellij {
-    version '2017.3.4'
+    version '2018.3.2'
 }
+
 patchPluginXml {
+    sinceBuild '162'
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+      Added compatibility through 2018.3.
+    """
 }
